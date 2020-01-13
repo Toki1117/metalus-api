@@ -10,7 +10,7 @@ import {
   MAT_DIALOG_DEFAULT_OPTIONS,
   MAT_SNACK_BAR_DEFAULT_OPTIONS,
   MAT_TOOLTIP_DEFAULT_OPTIONS,
-  MatSnackBarConfig
+  MatSnackBarConfig,
 } from '@angular/material';
 import { ApplicationsModule } from './applications/applications.module';
 import { StepsModule } from './steps/steps.module';
@@ -20,29 +20,33 @@ import { PipelinesModule } from './pipelines/pipelines.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     HttpClientModule,
 
     CoreModule,
     SharedModule,
-    ApplicationsModule,
     StepsModule,
     PipelinesModule,
-    AppRoutingModule,
   ],
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   providers: [
-    { provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: { hasBackdrop: true, autoFocus: false }},
-    { provide: MAT_TOOLTIP_DEFAULT_OPTIONS, useValue: {
+    {
+      provide: MAT_DIALOG_DEFAULT_OPTIONS,
+      useValue: { hasBackdrop: true, autoFocus: false },
+    },
+    {
+      provide: MAT_TOOLTIP_DEFAULT_OPTIONS,
+      useValue: {
         showDelay: 500,
         hideDelay: 0,
         touchendHideDelay: 1500,
-      }},
-    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 3000 } as MatSnackBarConfig },
+      },
+    },
+    {
+      provide: MAT_SNACK_BAR_DEFAULT_OPTIONS,
+      useValue: { duration: 3000 } as MatSnackBarConfig,
+    },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-
-export class AppModule {
-}
+export class AppModule {}

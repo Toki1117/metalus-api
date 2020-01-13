@@ -5,27 +5,28 @@ import { ComponentsEditorComponent } from './components/components-editor/compon
 import { SharedModule } from '../shared/shared.module';
 import { DesignerModule } from '../designer/designer.module';
 import { CodeEditorModule } from '../code-editor/code-editor.module';
-import {ExecutionEditorComponent} from "./components/execution-editor/execution-editor.component";
-import {DragDropModule} from "@angular/cdk/drag-drop";
+import { ExecutionEditorComponent } from './components/execution-editor/execution-editor.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { ApplicationsRoutingModule } from './applications-routing.module';
 
 @NgModule({
   imports: [
+    ApplicationsRoutingModule,
     SharedModule,
     CodeEditorModule,
     DesignerModule,
-    DragDropModule
+    DragDropModule,
   ],
   declarations: [
     ApplicationsEditorComponent,
     ComponentsEditorComponent,
     ExecutionEditorComponent,
-    SparkConfEditorComponent
+    SparkConfEditorComponent,
   ],
   entryComponents: [
     SparkConfEditorComponent,
     ComponentsEditorComponent,
-    ExecutionEditorComponent
-  ]
+    ExecutionEditorComponent,
+  ],
 })
-
 export class ApplicationsModule {}
