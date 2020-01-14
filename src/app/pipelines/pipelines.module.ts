@@ -9,18 +9,20 @@ import { CodeEditorModule } from '../code-editor/code-editor.module';
 import { PipelinesRoutingModule } from './pipelines-routing.module';
 
 @NgModule({
-  imports: [
-    SharedModule,
-    PipelinesRoutingModule,
-    StepsModule,
-    DesignerModule,
-    CodeEditorModule,
-  ],
-  declarations: [
-    PipelinesEditorComponent,
-    PipelineParameterComponent,
-    PipelinesSelectorModalComponent,
-  ],
-  entryComponents: [PipelinesSelectorModalComponent],
+	imports: [
+		PipelinesRoutingModule,
+		SharedModule,
+		StepsModule,
+		DesignerModule,
+		CodeEditorModule
+	],
+	declarations: [
+		PipelinesEditorComponent,
+		PipelineParameterComponent,
+		PipelinesSelectorModalComponent
+	],
+	entryComponents: [
+		PipelinesSelectorModalComponent
+	]
 })
 export class PipelinesModule {}

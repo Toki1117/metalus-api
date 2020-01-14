@@ -9,13 +9,20 @@ import { CodeEditorModule } from '../code-editor/code-editor.module';
 import { StepsRoutingModule } from './steps-routing.module';
 
 @NgModule({
-  imports: [SharedModule, StepsRoutingModule, DesignerModule, CodeEditorModule],
-  declarations: [
-    StepsEditorComponent,
-    StepsSelectorComponent,
-    StepsTreeComponent,
-    StepsListComponent,
-  ],
-  exports: [StepsSelectorComponent],
+	imports: [
+		StepsRoutingModule,
+		SharedModule,
+		DesignerModule,
+		CodeEditorModule
+	],
+	declarations: [
+		StepsEditorComponent,
+		StepsSelectorComponent,
+		StepsTreeComponent,
+		StepsListComponent
+	],
+	exports: [
+		StepsSelectorComponent
+	]
 })
 export class StepsModule {}
