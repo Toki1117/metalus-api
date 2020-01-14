@@ -6,22 +6,16 @@ import { StepsListComponent } from './components/selector/steps-list/steps-list.
 import { DesignerModule } from '../designer/designer.module';
 import { SharedModule } from '../shared/shared.module';
 import { CodeEditorModule } from '../code-editor/code-editor.module';
+import { StepsRoutingModule } from './steps-routing.module';
 
 @NgModule({
-  imports: [
-    SharedModule,
-    DesignerModule,
-    CodeEditorModule,
-  ],
+  imports: [SharedModule, StepsRoutingModule, DesignerModule, CodeEditorModule],
   declarations: [
     StepsEditorComponent,
     StepsSelectorComponent,
     StepsTreeComponent,
     StepsListComponent,
   ],
-  exports: [
-    StepsSelectorComponent,
-  ]
+  exports: [StepsSelectorComponent],
 })
-
 export class StepsModule {}

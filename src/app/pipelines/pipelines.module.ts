@@ -6,10 +6,12 @@ import { PipelinesSelectorModalComponent } from './components/pipelines-selector
 import { SharedModule } from '../shared/shared.module';
 import { StepsModule } from '../steps/steps.module';
 import { CodeEditorModule } from '../code-editor/code-editor.module';
+import { PipelinesRoutingModule } from './pipelines-routing.module';
 
 @NgModule({
   imports: [
     SharedModule,
+    PipelinesRoutingModule,
     StepsModule,
     DesignerModule,
     CodeEditorModule,
@@ -17,11 +19,8 @@ import { CodeEditorModule } from '../code-editor/code-editor.module';
   declarations: [
     PipelinesEditorComponent,
     PipelineParameterComponent,
-    PipelinesSelectorModalComponent
+    PipelinesSelectorModalComponent,
   ],
-  entryComponents: [
-    PipelinesSelectorModalComponent
-  ]
+  entryComponents: [PipelinesSelectorModalComponent],
 })
-
 export class PipelinesModule {}

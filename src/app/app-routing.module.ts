@@ -25,9 +25,18 @@ const appRoutes: Routes = [
         (m) => m.ApplicationsModule
       ),
   },
-  { path: 'steps-editor', component: StepsEditorComponent },
-  { path: 'pipelines-editor', component: PipelinesEditorComponent },
-
+  {
+    path: 'steps-editor',
+    component: LayoutComponent,
+    loadChildren: () =>
+      import('./steps/steps.module').then((m) => m.StepsModule),
+  },
+  {
+    path: 'pipelines-editor',
+    component: LayoutComponent,
+    loadChildren: () =>
+      import('./pipelines/pipelines.module').then((m) => m.PipelinesModule),
+  },
   { path: '**', component: PageNotFoundComponent },
 ];
 
