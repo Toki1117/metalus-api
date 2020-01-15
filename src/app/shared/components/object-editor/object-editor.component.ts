@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { IPackageObject } from '../../../core/interfaces/package-objects.model';
+import { IPackageObject } from '../../../core/models/package-objects.model';
 
 export interface ObjectEditorDialogData {
 	userObject: object;

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, map, mergeMap } from 'rxjs/operators';
-import { IPackageObject, IPackageObjectResponse, IPackageObjectsResponse } from '../interfaces/package-objects.model';
+import { IPackageObject, IPackageObjectResponse, IPackageObjectsResponse } from '../models/package-objects.model';
 
 @Injectable({
 	providedIn: 'root'

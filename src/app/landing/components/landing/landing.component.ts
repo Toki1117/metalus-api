@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { StepsService } from '../../../steps/steps.service';
 import { IStep } from '../../../steps/steps.model';
 import { PipelinesService } from '../../../core/services/pipelines.service';
-import { IPipeline } from '../../../core/interfaces/pipelines.model';
+import { IPipeline } from '../../../core/models/pipelines.model';
 import { ApplicationsService } from '../../../core/services/applications.service';
-import { IApplication } from '../../../core/interfaces/applications.model';
+import { IApplication } from '../../../core/models/applications.model';
 import { PackageObjectsService } from '../../../core/services/package-objects.service';
-import { IPackageObject } from '../../../core/interfaces/package-objects.model';
+import { IPackageObject } from '../../../core/models/package-objects.model';
 
 @Component({
 	selector: 'app-landing-page',

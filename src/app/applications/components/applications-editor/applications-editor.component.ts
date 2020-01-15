@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { IApplication, IExecution } from '../../../core/interfaces/applications.model';
+import { IApplication, IExecution } from '../../../core/models/applications.model';
 import {
 	DesignerComponent,
 	DesignerElement,
@@ -8,7 +8,7 @@ import {
 	DesignerModel
 } from '../../../designer/components/designer/designer.component';
 import { ApplicationsService } from '../../../core/services/applications.service';
-import { IPipeline } from '../../../core/interfaces/pipelines.model';
+import { IPipeline } from '../../../core/models/pipelines.model';
 import { PipelinesService } from '../../../core/services/pipelines.service';
 import { SharedFunctions } from '../../../shared/utils/shared-functions';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
@@ -19,7 +19,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Subject } from 'rxjs';
 import { PropertiesEditorModalComponent } from '../../../shared/components/properties-editor/modal/properties-editor-modal.component';
 import { PackageObjectsService } from '../../../core/services/package-objects.service';
-import { IPackageObject } from '../../../core/interfaces/package-objects.model';
+import { IPackageObject } from '../../../core/models/package-objects.model';
 import { CodeEditorComponent } from '../../../code-editor/components/code-editor/code-editor.component';
 import { ComponentsEditorComponent } from '../components-editor/components-editor.component';
 import { ExecutionEditorComponent } from '../execution-editor/execution-editor.component';

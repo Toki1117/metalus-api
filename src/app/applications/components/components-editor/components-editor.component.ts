@@ -1,8 +1,8 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { ClassComponentProperties } from '../../../core/interfaces/applications.model';
+import { ClassComponentProperties } from '../../../core/models/applications.model';
 import { PropertiesEditorModalComponent } from '../../../shared/components/properties-editor/modal/properties-editor-modal.component';
-import { IPackageObject } from '../../../core/interfaces/package-objects.model';
+import { IPackageObject } from '../../../core/models/package-objects.model';
 
 export interface ComponentsEditorData {
 	properties: ClassComponentProperties;

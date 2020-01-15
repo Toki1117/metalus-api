@@ -2,7 +2,7 @@ import { Component, Inject } from '@angular/core';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import { FormControl } from '@angular/forms';
 import { MatChipInputEvent } from '@angular/material/chips';
-import { IApplication, INameValuePair } from '../../../core/interfaces/applications.model';
+import { IApplication, INameValuePair } from '../../../core/models/applications.model';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 export interface ConfParameter extends INameValuePair {

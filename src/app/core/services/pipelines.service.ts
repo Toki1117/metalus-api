@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { IPipeline, IPipelineResponse, IPipelinesResponse } from '../interfaces/pipelines.model';
+import { IPipeline, IPipelineResponse, IPipelinesResponse } from '../models/pipelines.model';
 import { catchError, map } from 'rxjs/operators';
 
 @Injectable({

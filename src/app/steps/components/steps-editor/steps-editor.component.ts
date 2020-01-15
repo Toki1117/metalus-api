@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IStep } from '../../steps.model';
 import { StepsService } from '../../steps.service';
 import { PackageObjectsService } from '../../../core/services/package-objects.service';
-import { IPackageObject } from '../../../core/interfaces/package-objects.model';
+import { IPackageObject } from '../../../core/models/package-objects.model';
 import { diff } from 'deep-object-diff';
 import { CodeEditorComponent } from '../../../code-editor/components/code-editor/code-editor.component';
 import { ObjectEditorComponent } from '../../../shared/components/object-editor/object-editor.component';
