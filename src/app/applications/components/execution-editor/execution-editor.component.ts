@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { IPackageObject } from '../../../core/package-objects/package-objects.model';
+import { IPackageObject } from '../../../core/interfaces/package-objects.model';
 import { IExecution } from '../../../core/interfaces/applications.model';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { IPipeline } from '../../../pipelines/pipelines.model';

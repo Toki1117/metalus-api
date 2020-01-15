@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { SharedFunctions } from '../../utils/shared-functions';
 import { ObjectEditorComponent } from '../object-editor/object-editor.component';
 import { MatDialog } from '@angular/material/dialog';
-import { IPackageObject } from '../../../core/package-objects/package-objects.model';
+import { IPackageObject } from '../../../core/interfaces/package-objects.model';
 
 export interface GlobalParameter {
   id: number;

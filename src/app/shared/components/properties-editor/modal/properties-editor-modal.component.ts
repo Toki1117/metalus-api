@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { IPackageObject } from '../../../../core/package-objects/package-objects.model';
+import { IPackageObject } from '../../../../core/interfaces/package-objects.model';
 
 export interface PropertiesEditorData {
   allowSpecialParameters: boolean;

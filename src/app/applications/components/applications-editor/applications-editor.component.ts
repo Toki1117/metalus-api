@@ -18,8 +18,8 @@ import { SparkConfEditorComponent } from '../spark-conf-editor/spark-conf-editor
 import { MatDialog } from '@angular/material/dialog';
 import { Subject } from 'rxjs';
 import { PropertiesEditorModalComponent } from '../../../shared/components/properties-editor/modal/properties-editor-modal.component';
-import { PackageObjectsService } from '../../../core/package-objects/package-objects.service';
-import { IPackageObject } from '../../../core/package-objects/package-objects.model';
+import { PackageObjectsService } from '../../../core/services/package-objects.service';
+import { IPackageObject } from '../../../core/interfaces/package-objects.model';
 import { CodeEditorComponent } from '../../../code-editor/components/code-editor/code-editor.component';
 import { ComponentsEditorComponent } from '../components-editor/components-editor.component';
 import { ExecutionEditorComponent } from '../execution-editor/execution-editor.component';

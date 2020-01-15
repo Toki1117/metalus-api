@@ -5,8 +5,8 @@ import { PipelinesService } from '../../../pipelines/pipelines.service';
 import { IPipeline } from '../../../pipelines/pipelines.model';
 import { ApplicationsService } from '../../../core/services/applications.service';
 import { IApplication } from '../../../core/interfaces/applications.model';
-import { PackageObjectsService } from '../../../core/package-objects/package-objects.service';
-import { IPackageObject } from '../../../core/package-objects/package-objects.model';
+import { PackageObjectsService } from '../../../core/services/package-objects.service';
+import { IPackageObject } from '../../../core/interfaces/package-objects.model';
 
 @Component({
 	selector: 'app-landing-page',

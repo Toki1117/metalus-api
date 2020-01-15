@@ -3,7 +3,7 @@ import { IPipeline, IPipelineStepParam } from '../../pipelines.model';
 import { CodeEditorComponent } from '../../../code-editor/components/code-editor/code-editor.component';
 import { ObjectEditorComponent } from '../../../shared/components/object-editor/object-editor.component';
 import { MatDialog } from '@angular/material/dialog';
-import { IPackageObject } from '../../../core/package-objects/package-objects.model';
+import { IPackageObject } from '../../../core/interfaces/package-objects.model';
 import { SharedFunctions } from '../../../shared/utils/shared-functions';
 import { PropertiesEditorModalComponent } from '../../../shared/components/properties-editor/modal/properties-editor-modal.component';
 import { PipelinesSelectorModalComponent } from '../pipelines-selector-modal/pipelines-selector-modal.component';
