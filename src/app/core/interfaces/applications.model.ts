@@ -1,4 +1,4 @@
-import { IPipeline, PipelineParameter } from '../../pipelines/pipelines.model';
+import { IPipeline, PipelineParameter } from './pipelines.model';
 
 export interface IApplicationsResponse {
 	applications: IApplication[];

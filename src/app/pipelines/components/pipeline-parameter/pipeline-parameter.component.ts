@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, EventEmitter, Input, Output } from '@angular/core';
-import { IPipeline, IPipelineStepParam } from '../../pipelines.model';
+import { IPipeline, IPipelineStepParam } from '../../../core/interfaces/pipelines.model';
 import { CodeEditorComponent } from '../../../code-editor/components/code-editor/code-editor.component';
 import { ObjectEditorComponent } from '../../../shared/components/object-editor/object-editor.component';
 import { MatDialog } from '@angular/material/dialog';

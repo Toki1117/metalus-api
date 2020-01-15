@@ -8,8 +8,8 @@ import {
 	DesignerModel
 } from '../../../designer/components/designer/designer.component';
 import { ApplicationsService } from '../../../core/services/applications.service';
-import { IPipeline } from '../../../pipelines/pipelines.model';
-import { PipelinesService } from '../../../pipelines/pipelines.service';
+import { IPipeline } from '../../../core/interfaces/pipelines.model';
+import { PipelinesService } from '../../../core/services/pipelines.service';
 import { SharedFunctions } from '../../../shared/utils/shared-functions';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import { FormControl } from '@angular/forms';

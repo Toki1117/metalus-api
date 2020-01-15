@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { StepsService } from '../../../steps/steps.service';
 import { IStep } from '../../../steps/steps.model';
-import { PipelinesService } from '../../../pipelines/pipelines.service';
-import { IPipeline } from '../../../pipelines/pipelines.model';
+import { PipelinesService } from '../../../core/services/pipelines.service';
+import { IPipeline } from '../../../core/interfaces/pipelines.model';
 import { ApplicationsService } from '../../../core/services/applications.service';
 import { IApplication } from '../../../core/interfaces/applications.model';
 import { PackageObjectsService } from '../../../core/services/package-objects.service';

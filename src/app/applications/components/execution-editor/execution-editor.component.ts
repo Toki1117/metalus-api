@@ -2,7 +2,7 @@ import { Component, Inject } from '@angular/core';
 import { IPackageObject } from '../../../core/interfaces/package-objects.model';
 import { IExecution } from '../../../core/interfaces/applications.model';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { IPipeline } from '../../../pipelines/pipelines.model';
+import { IPipeline } from '../../../core/interfaces/pipelines.model';
 import { PropertiesEditorModalComponent } from '../../../shared/components/properties-editor/modal/properties-editor-modal.component';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { ComponentsEditorComponent } from '../components-editor/components-editor.component';

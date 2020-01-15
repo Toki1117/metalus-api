@@ -1,4 +1,4 @@
-import { IPipeline, IPipelineStepParam } from '../../pipelines/pipelines.model';
+import { IPipeline, IPipelineStepParam } from '../../core/interfaces/pipelines.model';
 
 export class SharedFunctions {
   private static leadCharacters: string[] = ['@', '!', '#', '$'];

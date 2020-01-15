@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { IPipeline } from '../../pipelines.model';
+import { IPipeline } from '../../../core/interfaces/pipelines.model';
 
 @Component({
   selector: 'app-pipelines-selector-modal',

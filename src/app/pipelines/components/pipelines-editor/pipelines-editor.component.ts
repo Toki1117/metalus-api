@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PackageObjectsService } from '../../../core/services/package-objects.service';
 import { IPackageObject } from '../../../core/interfaces/package-objects.model';
-import { IPipeline, IPipelineStep, IPipelineStepParam } from '../../pipelines.model';
-import { PipelinesService } from '../../pipelines.service';
+import { IPipeline, IPipelineStep, IPipelineStepParam } from '../../../core/interfaces/pipelines.model';
+import { PipelinesService } from '../../../core/services/pipelines.service';
 import {
 	DesignerComponent,
 	DesignerElement,
